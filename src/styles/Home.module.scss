@@ -1,0 +1,109 @@
+.wrapper {
+	background: #fff;
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	padding: 2.4% 3%;
+	box-sizing: border-box;
+	@media only screen and (max-width: 1200px) {
+		width: 100%;
+	}
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.formContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex-direction: column;
+	padding: 3.2% 7.4% 0 7.4%;
+	box-sizing: border-box;
+	> p {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+		margin: 8px 0 16px;
+	}
+}
+
+.instructionText {
+	display: flex;
+	font-size: 14px;
+	line-height: 16.8px;
+	justify-content: space-between;
+	align-items: center;
+	p {
+		width: fit-content;
+		white-space: nowrap;
+		background: #fff;
+		padding-right: 10px;
+	}
+}
+
+.line {
+	display: block;
+	background: #000;
+	height: 1px;
+	width: 100%;
+}
+
+.nameBlock {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0 0 16px;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		margin: 0px;
+	}
+}
+
+.input {
+	width: calc(50% - 10px);
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+		margin: 0 0 16px;
+	}
+}
+
+.button {
+	width: calc(50% - 10px);
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+		margin: 0 0 16px;
+	}
+}
+
+.row {
+	width: 100%;
+	margin: 0 0 16px;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.note {
+	margin: 25px 0;
+}
+
+.reminderList {
+	margin: 8px 0 0 0;
+}
+
+.remark {
+	font-size: 13px;
+	line-height: 16px;
+	color: #757575;
+	text-align: center;
+	margin: 16px 0 0 0;
+	span {
+		cursor: pointer;
+		color: #3c71ff;
+		font-weight: bold;
+		&:hover {
+			border-bottom: 2px solid #3c71ff;
+		}
+	}
+}

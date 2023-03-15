@@ -1,0 +1,58 @@
+.normalButtonContainer {
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	border-radius: 4px;
+	padding: 16px 12px;
+	p {
+		margin: 0px;
+	}
+	&[data-style-type='border'] {
+		background: #ffffff;
+		border: 1px solid #3c71ff;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 16px;
+		&:hover {
+			background: #3c71ff;
+			color: #fff;
+			box-shadow: 0px 6px 15px rgba(60, 113, 255, 0.4);
+			.google {
+				width: 16px;
+				height: 16px;
+				background: url('/icon/google_icon.svg') no-repeat;
+			}
+			.facebook {
+				width: 16px;
+				height: 16px;
+				background: url('/icon/facebook_icon.svg') no-repeat;
+			}
+		}
+	}
+	&[data-style-type='fill'] {
+		background: #3c71ff;
+		color: #fff;
+		justify-content: center;
+		&:hover {
+			box-shadow: 0px 6px 15px rgba(60, 113, 255, 0.4);
+		}
+	}
+}
+
+.google {
+	background: url('/icon/google_active_icon.svg') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+
+.facebook {
+	background: url('/icon/facebook_active_icon.svg') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+
+.iconBlock {
+	margin: 0 16px 0 0;
+}

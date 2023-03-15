@@ -1,0 +1,50 @@
+.inputContainer {
+	//  TODO  這邊實在是寫的不太好
+	border-radius: 4px;
+	background: #f1f5ff;
+	padding: 8px 12px 10px;
+	height: 48px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	//  TODO  這邊可能要算一下比例
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 20px);
+	label {
+		color: #757575;
+		font-size: 10px;
+		line-height: 12px;
+		// position: absolute;
+		// top: 8px;
+		// left: 12px;
+	}
+	input {
+		border: none;
+		background: #f1f5ff;
+		border-radius: 4px;
+		font-size: 14px;
+		line-height: 16.8px;
+		// position: absolute;
+		// top: 22px;
+		// left: 12px;
+
+		&:focus {
+			outline: none;
+		}
+		&[type='password'] {
+			-webkit-text-security: disc !important;
+		}
+	}
+}
+
+.eyesIcon {
+	width: 20px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
